@@ -53,7 +53,7 @@ export function Features() {
           {"What's included?"}
         </h3>
         <h2 className="text-4xl font-bold text-center mb-8">
-          Everything you need to supercharge your sales process
+          Everything you need to supercharge your front desk
         </h2>
       </motion.div>
       <div className="!mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16 md:gap-24 lg:gap-32 max-w-7xl mx-auto md:pb-14 sm:pb-0">
