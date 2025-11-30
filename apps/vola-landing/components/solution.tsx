@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Zap } from "lucide-react";
+import { Check, Zap } from "lucide-react";
 import { motion } from "framer-motion";
 
 export function Solution() {
@@ -84,7 +84,12 @@ function SolutionCard({
           </div>
         </div>
         <p className="text-muted-foreground">{description}</p>
-        {/* <Button className="mt-4">Create waitlist now</Button> */}
+        {features.map((feature, index) => (
+          <div key={index} className="flex items-center gap-2">
+            <Check className="h-4 w-4" />
+            <p>{feature}</p>
+          </div>
+        ))}
       </div>
       {/* <motion.div
         className="flex-1"
@@ -142,7 +147,7 @@ const solutions = [
     description:
       "Load Vola with the details that matter: insurance accepted, hours, providers, services, and your unique workflows. Everything updates instantly, so your receptionist always gives accurate, compliant information.",
     features: [
-      "Start with templates tailored to dental practices",
+      "Preconfigured specifically for dental practices",
       "Simple, no-code customization",
     ],
     // videoSrc: "https://cdn.fastwaitlist.com/how-it-works-2.mp4",

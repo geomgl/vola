@@ -16,7 +16,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Vobo AI",
+  title: "Vola AI",
   description: "Create AI Voice Agents for your sales team in seconds.",
 };
 
